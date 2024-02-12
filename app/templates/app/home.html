@@ -1,0 +1,127 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title  %}
+
+
+{% block banner-slider %}
+<div id="carouselExampleSlidersonly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+       <img src ="{% static 'app/images/banner/b1.jpg' %}" width="400" height ="350" class= "d-block w-100" alt="banner image">
+    </div>
+     <div class="carousel-item">
+       <img src ="{% static 'app/images/banner/b2.jpg' %}"width="400" height ="350" class= "d-block w-100" alt="banner image">
+    </div>
+     <div class="carousel-item">
+       <img src ="{% static 'app/images/banner/b3.jpg' %}"width="400" height ="350" class= "d-block w-100" alt="banner image">
+    </div>
+     <div class="carousel-item">
+       <img src ="{% static 'app/images/banner/b4.png' %}" width="400" height ="350"class= "d-block w-100" alt="banner image">
+    </div>
+  </div>
+</div>    
+
+{% endblock banner-slider  %}
+
+
+{% block information %}
+<div class ="container">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow"> 
+        <h1> Products </h1>
+        <small class="fs-5">Casuals world offers a wide range of models for mens.
+        A mdoels which we have is very latest and also very stylish looking.
+
+        We having an available models in various cloth sections such as jeans,casual shirt
+        for half hand shirts for full hand,casual t-shirts of collered for full sleeve,
+        casual t-shirts of roundedfor full hand,casual t-shirts of collered for half sleeve,
+        casual t-shirts of collered for half sleeve.</small>    
+    </div>    
+</div>
+{% endblock information %}
+
+{% block main-content %}
+    <div class="container">
+        <h2 class="text-center">Casuals World</h2>
+        <br><br> 
+        <div class="row container">
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-row-duration="1s" data-wow-delay="0.6s"
+              style="animation-duration: 1s; animation-delay: 0.6s;animation-name: none;">
+                  <div class="goodnesssec buttermilk smbg">
+                     <a href="{% url 'category' 'JN' %}">
+                        <div class ="goodnessseccont text-center">
+                          <img src="{% static 'app/images/product/jeans-1.png' %}" class="img-responsive 
+                          center-block"alt="">
+                          <p class="mlkpro">Jeans</p>
+                        </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-row-duration="1s" data-wow-delay="0.6s"
+              style="animation-duration: 1s; animation-delay: 0.6s;animation-name: none;">
+                  <div class="goodnesssec buttermilk curdbgpro">
+                     <a href="{% url 'category' 'CFS' %}">
+                        <div class ="goodnessseccont text-center">
+                          <img src="{% static 'app/images/product/3-dress-shirt-png-image.png' %}" class="img-responsive
+                           center-block"alt="">
+                          <p class="mlkpro">Casual Full Size Shirts</p>
+                        </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-row-duration="1s" data-wow-delay="0.6s"
+              style="animation-duration: 1s; animation-delay: 0.6s;animation-name: none;">
+                  <div class="goodnesssec buttermilk buttermilk">
+                      <a href="{% url 'category' 'CHS' %}">
+                        <div class ="goodnessseccont text-center">
+                          <img src="{% static 'app/images/product/Dress-Shirt-PNG-Image-HD.png' %}" class="img-responsive
+                           center-block"alt="">
+                          <p class="mlkpro">Casual Half Size Shirts</p>
+                        </div>
+                      </a>
+                  </div>
+              </div>
+        </div>
+
+        <br><br>
+
+          <div class="row container">
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-row-duration="1s" data-wow-delay="0.6s"
+              style="animation-duration: 1s; animation-delay: 0.6s;animation-name: none;">
+                  <div class="goodnesssec buttermilk smbg">
+                     <a href="{% url 'category' 'CHCT' %}">
+                        <div class ="goodnessseccont text-center">
+                          <img src="{% static 'app/images/product/Polo-Collar-T-Shirt-PNG-Isolated-File.png' %}" class="img-responsive 
+                          center-block"alt="">
+                          <p class="mlkpro">Casual Half Sleeve Collar Tshirt</p>
+                        </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-row-duration="1s" data-wow-delay="0.6s"
+              style="animation-duration: 1s; animation-delay: 0.6s;animation-name: none;">
+                  <div class="goodnesssec buttermilk curdbgpro">
+                     <a href="{% url 'category' 'CHRT' %}">
+                        <div class ="goodnessseccont text-center">
+                          <img src="{% static 'app/images/product/blank-t-shirt-png-8.png' %}" class="img-responsive
+                           center-block"alt="">
+                          <p class="mlkpro">Casual Half Sleeve Round Neck Tshirt</p>
+                        </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-row-duration="1s" data-wow-delay="0.6s"
+              style="animation-duration: 1s; animation-delay: 0.6s;animation-name: none;">
+                  <div class="goodnesssec buttermilk buttermilk">
+                      <a href="{% url 'category' 'CFRT' %}">
+                        <div class ="goodnessseccont text-center">
+                          <img src="{% static 'app/images/product/Raglan-Sleeve-T-Shirt-PNG-Isolated-File.png' %}" class="img-responsive
+                           center-block"alt="">
+                          <p class="mlkpro">casual Full Sleeve Round Neck Tshirt</p>
+                        </div>
+                      </a>
+                  </div>
+              </div>
+        </div>  
+    </div>
+    <br/><br/>           
+{% endblock main-content %}
